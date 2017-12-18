@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.ui.viewAtten.ViewAttendanceController">
+   <children>
+      <TableView fx:id="attenTable" prefHeight="498.0" prefWidth="862.0">
+        <columns>
+          <TableColumn fx:id="rollCol" prefWidth="86.0" text="Roll No." />
+          <TableColumn fx:id="dateCol" prefWidth="86.0" text="Date" />
+            <TableColumn fx:id="dayCol" prefWidth="86.0" text="Day" />
+            <TableColumn fx:id="slot1Col" prefWidth="86.0" text="Slot 1" />
+            <TableColumn fx:id="slot2Col" prefWidth="86.0" text="Slot 2" />
+            <TableColumn fx:id="slot3Col" prefWidth="86.0" text="Slot 3" />
+            <TableColumn fx:id="slot4Col" prefWidth="86.0" text="Slot 4" />
+            <TableColumn fx:id="slot5Col" prefWidth="86.0" text="Slot 5" />
+            <TableColumn fx:id="slot6Col" prefWidth="86.0" text="Slot 6" />
+            <TableColumn fx:id="totalCol" prefWidth="86.0" text="Total" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

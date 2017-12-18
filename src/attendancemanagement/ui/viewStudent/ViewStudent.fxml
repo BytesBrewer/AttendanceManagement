@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="567.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.ui.viewStudent.ViewStudentController">
+    <stylesheets>
+        <URL value="@viewstudent.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane prefHeight="502.0" prefWidth="567.0">
+         <content>
+            <TableView fx:id="StudentTable" prefHeight="654.0" prefWidth="1146.0" stylesheets="@viewstudent.css">
+              <columns>
+                <TableColumn fx:id="nameCol" editable="false" prefWidth="100.0" text="Name" />
+                  <TableColumn fx:id="grNoCol" minWidth="0.0" prefWidth="100.0" text="Gr Number" />
+                  <TableColumn fx:id="rollNoCol" minWidth="0.0" prefWidth="100.0" text="Roll No." />
+                  <TableColumn fx:id="yearCol" prefWidth="100.0" text="Class" />
+                  <TableColumn fx:id="branchCol" prefWidth="100.0" text="Branch" />
+                  <TableColumn fx:id="fatherCol" prefWidth="100.0" text="Father Name" />
+                  <TableColumn fx:id="motherCol" prefWidth="100.0" text="Mother Name" />
+                  <TableColumn fx:id="genderCol" minWidth="0.0" prefWidth="100.0" text="Gender" />
+                  <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="100.0" text="Email" />
+                  <TableColumn fx:id="phoneCol" minWidth="0.0" prefWidth="100.0" text="Phone" />
+                  <TableColumn fx:id="dobCol" minWidth="0.0" prefWidth="100.0" text="Date of Birth" />
+                  <TableColumn fx:id="addressCol" minWidth="0.0" prefWidth="100.0" text="Address" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

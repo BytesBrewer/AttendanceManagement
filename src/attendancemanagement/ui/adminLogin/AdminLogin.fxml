@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.ui.adminLogin.AdminLoginController">
+   <children>
+      <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="714.0">
+         <left>
+            <VBox prefHeight="527.0" prefWidth="147.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="add_faculty" alignment="CENTER" contentDisplay="TOP" onAction="#AddFaculty" onMouseEntered="#hover" onMouseExited="#hover_close" prefHeight="150.0" prefWidth="151.0" ripplerFill="#0fc8f1" style="-fx-background-color: #ffffff;" text="Add Faculty" textFill="#63e0ff">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@teacher.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="add_student" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#AddStudent" onMouseEntered="#hover" onMouseExited="#hover_close" prefHeight="150.0" prefWidth="148.0" ripplerFill="#0dd4fc" style="-fx-background-color: #ffffff;" text="Add Student" textFill="#63e0ff">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@student.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="manage_faculty" contentDisplay="TOP" layoutX="10.0" layoutY="60.0" onAction="#manageFaculty" onMouseEntered="#hover" onMouseExited="#hover_close" prefHeight="150.0" prefWidth="150.0" ripplerFill="#0fd4fc" style="-fx-background-color: #ffffff;" text="Manage Faculty" textAlignment="CENTER" textFill="#63e0ff" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@manageTeacher.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="manage_student" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#manageStudent" onMouseEntered="#hover" onMouseExited="#hover_close" prefHeight="150.0" prefWidth="148.0" ripplerFill="#0bcef5" style="-fx-background-color: #ffffff;" text="Manage Student" textAlignment="CENTER" textFill="#63e0ff" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@manageStudent.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="view_student" contentDisplay="TOP" layoutX="10.0" layoutY="110.0" onAction="#ViewStudent" onMouseEntered="#hover" onMouseExited="#hover_close" prefHeight="150.0" prefWidth="153.0" ripplerFill="#10d2f8" style="-fx-background-color: #ffffff;" text="View Students" textFill="#63e0ff">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@view-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="view_faculty" contentDisplay="TOP" layoutX="10.0" layoutY="360.0" onAction="#ViewFaculty" onMouseEntered="#hover" onMouseExited="#hover_close" prefHeight="150.0" prefWidth="147.0" ripplerFill="#0fd4fb" style="-fx-background-color: #ffffff;" text="View Faculty" textFill="#63e0ff">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@view-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="43.0" prefWidth="714.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="logout" alignment="CENTER" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" onAction="#Logout" onMouseEntered="#hover" onMouseExited="#hover_close" prefHeight="43.0" prefWidth="121.0" ripplerFill="#0fc8f1" text="LOGOUT" textAlignment="CENTER" textFill="#56ebff">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../faculty_Login/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="171.0" text="Welcome Admin" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="420.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane fx:id="AnchorPane" prefHeight="502.0" prefWidth="567.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="502.0" fitWidth="566.0" opacity="0.14" pickOnBounds="true">
+                     <image>
+                        <Image url="@banner-1.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </center>
+         <bottom>
+            <HBox prefHeight="26.0" prefWidth="714.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.ui.faculty_Login.FacultyLoginController">
+   <children>
+      <Label layoutX="228.0" layoutY="35.0" text="FACULTY LOGIN" textFill="#4417a4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="takeAtten" contentDisplay="TOP" layoutX="64.0" layoutY="124.0" onAction="#takeAtten" prefHeight="198.0" prefWidth="206.0" style="-fx-background-color: #17c158; -fx-background-radius: 10;" text="Take Attendance" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="109.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@faculty-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="viewAtten" contentDisplay="TOP" layoutX="318.0" layoutY="124.0" onAction="#ViewAtten" prefHeight="198.0" prefWidth="206.0" style="-fx-background-color: #7032bb; -fx-background-radius: 10;" text="View Attendance" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@view-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="logout" layoutX="447.0" layoutY="18.0" onAction="#Logout" prefHeight="30.0" prefWidth="131.0" style="-fx-background-color: #ffffff;" text="Logout">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

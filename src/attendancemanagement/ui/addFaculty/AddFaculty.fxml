@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="502.0" prefWidth="567.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.ui.addFaculty.AddFacultyController">
+   <children>
+      <ScrollPane fx:id="ScrollPane" hbarPolicy="NEVER" prefHeight="502.0" prefWidth="567.0" style="-fx-background-color: #ffffff;">
+         <content>
+            <AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="567.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass">
+                <stylesheets>
+                    <URL value="@addfaculty.css" />
+                </stylesheets>
+               <children>
+                  <Label layoutX="29.0" layoutY="21.0" prefHeight="30.0" prefWidth="125.0" text="Enter Details" textFill="#eb2d92">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="firstName" labelFloat="true" layoutX="25.0" layoutY="60.0" maxWidth="540.0" minWidth="229.0" prefHeight="36.0" prefWidth="229.0" promptText="First Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="lastName" labelFloat="true" layoutX="307.0" layoutY="60.0" maxWidth="237.0" minWidth="229.0" prefHeight="36.0" prefWidth="229.0" promptText="Last Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="username" labelFloat="true" layoutX="26.0" layoutY="120.0" maxWidth="515.0" minWidth="504.0" prefHeight="31.0" prefWidth="515.0" promptText="Username">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="password" labelFloat="true" layoutX="26.0" layoutY="176.0" maxWidth="515.0" minWidth="504.0" prefHeight="31.0" prefWidth="515.0" promptText="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="cPassword" labelFloat="true" layoutX="26.0" layoutY="239.0" maxWidth="515.0" minWidth="504.0" prefHeight="31.0" prefWidth="515.0" promptText="Confirm Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="phone" labelFloat="true" layoutX="25.0" layoutY="303.0" maxWidth="229.0" minWidth="229.0" prefHeight="31.0" prefWidth="229.0" promptText="Phone Number">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="gender" layoutX="307.0" layoutY="307.0" prefHeight="28.0" prefWidth="229.0" promptText="Gender" visibleRowCount="3" />
+                  <JFXTextField fx:id="email" labelFloat="true" layoutX="26.0" layoutY="429.0" maxWidth="515.0" minWidth="515.0" prefHeight="31.0" prefWidth="515.0" promptText="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="address" layoutX="27.0" layoutY="487.0" maxWidth="515.0" minWidth="353.0" prefHeight="31.0" prefWidth="515.0" promptText="Address">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="77.0" layoutY="543.0" onAction="#saveData" prefHeight="56.0" prefWidth="177.0" style="-fx-background-color: #18dd11;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="340.0" layoutY="543.0" prefHeight="56.0" prefWidth="177.0" style="-fx-background-color: #f80505;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXDatePicker fx:id="dob" layoutX="26.0" layoutY="363.0" prefHeight="31.0" prefWidth="258.0" promptText="Date of Birth" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

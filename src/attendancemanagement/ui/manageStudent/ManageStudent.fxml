@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" prefHeight="502.0" prefWidth="567.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendancemanagement.ui.manageStudent.ManageStudentController">
+   <children>
+      <Label layoutX="31.0" layoutY="21.0" prefHeight="30.0" prefWidth="139.0" text="Search Student" textFill="#4caf50">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="studentSearch" focusColor="#1ad00a" layoutX="49.0" layoutY="98.0" prefWidth="350.0" promptText="Enter name" unFocusColor="#0d9032">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="search" layoutX="425.0" layoutY="101.0" onAction="#searchData" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #009688;" text="Search" textFill="WHITE" />
+      <ScrollPane fx:id="details" hbarPolicy="NEVER" layoutX="21.0" layoutY="146.0" prefHeight="336.0" prefWidth="533.0" visible="false">
+         <content>
+            <AnchorPane prefHeight="490.0" prefWidth="520.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label layoutX="20.0" layoutY="44.0" prefHeight="17.0" prefWidth="90.0" text="Father Name : " textFill="#20a133" />
+                  <Label layoutX="20.0" layoutY="14.0" text="Name : " textFill="#20a133" />
+                  <Label layoutX="21.0" layoutY="75.0" text="Mother Name : " textFill="#20a133" />
+                  <Label layoutX="21.0" layoutY="107.0" text="Gender : " textFill="#20a133" />
+                  <Label layoutX="21.0" layoutY="139.0" text="Roll No : " textFill="#20a133" />
+                  <Label layoutX="21.0" layoutY="172.0" text="GR No. :  " textFill="#20a133" />
+                  <Label layoutX="19.0" layoutY="205.0" text="Branch : " textFill="#20a133" />
+                  <Label fx:id="name" layoutX="131.0" layoutY="14.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="father" layoutX="131.0" layoutY="44.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="mother" layoutX="131.0" layoutY="75.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="gender" layoutX="131.0" layoutY="107.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="rollNo" layoutX="131.0" layoutY="139.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="grNo" layoutX="131.0" layoutY="172.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label layoutX="19.0" layoutY="237.0" text="Class : " textFill="#20a133" />
+                  <Label layoutX="19.0" layoutY="269.0" text="Date of Birth : " textFill="#20a133" />
+                  <Label layoutX="19.0" layoutY="303.0" text="Phone : " textFill="#20a133" />
+                  <Label layoutX="19.0" layoutY="337.0" text="Email : " textFill="#20a133" />
+                  <Label layoutX="19.0" layoutY="371.0" text="Addresss : " textFill="#20a133" />
+                  <Label fx:id="branch" layoutX="131.0" layoutY="205.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="year" layoutX="131.0" layoutY="237.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="dob" layoutX="131.0" layoutY="269.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="phone" layoutX="131.0" layoutY="303.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="email" layoutX="131.0" layoutY="337.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <Label fx:id="address" layoutX="131.0" layoutY="371.0" prefHeight="17.0" prefWidth="371.0" textFill="#25a70e" />
+                  <JFXButton fx:id="updateData" layoutX="105.0" layoutY="434.0" onAction="#updateData" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #7cf9b8;" text="Update" textFill="WHITE" />
+                  <JFXButton fx:id="deleteData" layoutX="335.0" layoutY="434.0" onAction="#deleteData" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #ffb3b3;" text="Delete" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="noData" layoutX="42.0" layoutY="151.0" prefHeight="318.0" prefWidth="496.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="136.0" layoutY="128.0" opacity="0.49" text="Sorry! No Data Found" textFill="#30bf5d">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
